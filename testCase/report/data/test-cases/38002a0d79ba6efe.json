@@ -1,0 +1,100 @@
+{
+  "uid" : "38002a0d79ba6efe",
+  "name" : "test_login_oi06",
+  "fullName" : "testCase.test_login.TestLogin#test_login_oi06",
+  "historyId" : "f050a2a758ac35acb1e332947c3688db",
+  "time" : {
+    "start" : 1622111813122,
+    "stop" : 1622111813122,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 无原因的跳过",
+  "statusTrace" : "('/Users/dingzhihui/PycharmProjects/test_python_pytest/testCase/test_login.py', 38, 'Skipped: 无原因的跳过')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin",
+    "time" : {
+      "start" : 1622111813106,
+      "stop" : 1622111813106,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin::0",
+    "time" : {
+      "start" : 1622111813126,
+      "stop" : 1622111813126,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip(reason='无原因的跳过')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "zhihuiding-MBP.lan"
+  }, {
+    "name" : "thread",
+    "value" : "33647-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4d9f5118407fdd18",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 无原因的跳过",
+      "time" : {
+        "start" : 1622111681906,
+        "stop" : 1622111681906,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.skip(reason='无原因的跳过')" ]
+  },
+  "source" : "38002a0d79ba6efe.json",
+  "parameterValues" : [ ]
+}

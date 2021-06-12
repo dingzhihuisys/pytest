@@ -1,0 +1,303 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "zhihuiding-MBP.lan",
+    "children" : [ {
+      "name" : "33607-MainThread",
+      "children" : [ {
+        "name" : "test_login_oi07",
+        "uid" : "b903be28c5ecd660",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681911,
+          "stop" : 1622111681911,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_oi06",
+        "uid" : "4d9f5118407fdd18",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1622111681906,
+          "stop" : 1622111681906,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_product_01",
+        "uid" : "98c52964bfaa31ae",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681914,
+          "stop" : 1622111681914,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_os01[002]",
+        "uid" : "247c3cb19947baba",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681896,
+          "stop" : 1622111681896,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'丁智慧02'" ]
+      }, {
+        "name" : "test_login_oi04",
+        "uid" : "c7e8f78d03024c62",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681903,
+          "stop" : 1622111681903,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_os01[004]",
+        "uid" : "f32b5f4e9b87ea5a",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681901,
+          "stop" : 1622111681901,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'丁智慧04'" ]
+      }, {
+        "name" : "test_login_os01[001]",
+        "uid" : "70470c6bfb4db613",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681892,
+          "stop" : 1622111681892,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'丁智慧01'" ]
+      }, {
+        "name" : "test_login_os02",
+        "uid" : "68e73e8636181b23",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681888,
+          "stop" : 1622111681888,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_os01[003]",
+        "uid" : "efeaddbd64d3a30a",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681899,
+          "stop" : 1622111681899,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'丁智慧03'" ]
+      }, {
+        "name" : "test_login_or03",
+        "uid" : "19e25ec07fd0c0ba",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681891,
+          "stop" : 1622111681891,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_oi05",
+        "uid" : "62c3d17ecddbcd0f",
+        "parentUid" : "1b9b172af8b928eaf4694bf4b3d2019d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111681905,
+          "stop" : 1622111681905,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1b9b172af8b928eaf4694bf4b3d2019d"
+    }, {
+      "name" : "33647-MainThread",
+      "children" : [ {
+        "name" : "test_product_01",
+        "uid" : "f7c933feaa47e19f",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813128,
+          "stop" : 1622111813128,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_os01[002]",
+        "uid" : "d4f0cce2e13fc466",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813113,
+          "stop" : 1622111813113,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'丁智慧02'" ]
+      }, {
+        "name" : "test_login_oi05",
+        "uid" : "241ebfc8beeb1437",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813121,
+          "stop" : 1622111813121,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_os01[001]",
+        "uid" : "4f65dcd3d90cf628",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813111,
+          "stop" : 1622111813111,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'丁智慧01'" ]
+      }, {
+        "name" : "test_login_oi06",
+        "uid" : "38002a0d79ba6efe",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1622111813122,
+          "stop" : 1622111813122,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_os01[004]",
+        "uid" : "8620e1c78b9b4f39",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813117,
+          "stop" : 1622111813118,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'丁智慧04'" ]
+      }, {
+        "name" : "test_login_or03",
+        "uid" : "22907999f17d3824",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813109,
+          "stop" : 1622111813109,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_os02",
+        "uid" : "b991415b67d332db",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813107,
+          "stop" : 1622111813107,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_oi04",
+        "uid" : "9e692d97b7d53e5",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813120,
+          "stop" : 1622111813120,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_oi07",
+        "uid" : "c5809f965928420b",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813126,
+          "stop" : 1622111813126,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_os01[003]",
+        "uid" : "3ad9d83beb66d46",
+        "parentUid" : "7a266766021d04ebc6be22f1be84c323",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622111813115,
+          "stop" : 1622111813115,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'丁智慧03'" ]
+      } ],
+      "uid" : "7a266766021d04ebc6be22f1be84c323"
+    } ],
+    "uid" : "a8a9b32ff29220f9177ca7bded29d575"
+  } ]
+}

@@ -1,0 +1,111 @@
+[ {
+  "uid" : "22907999f17d3824",
+  "name" : "test_login_or03",
+  "time" : {
+    "start" : 1622111813109,
+    "stop" : 1622111813109,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38002a0d79ba6efe",
+  "name" : "test_login_oi06",
+  "time" : {
+    "start" : 1622111813122,
+    "stop" : 1622111813122,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "8620e1c78b9b4f39",
+  "name" : "test_login_os01[004]",
+  "time" : {
+    "start" : 1622111813117,
+    "stop" : 1622111813118,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e692d97b7d53e5",
+  "name" : "test_login_oi04",
+  "time" : {
+    "start" : 1622111813120,
+    "stop" : 1622111813120,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7c933feaa47e19f",
+  "name" : "test_product_01",
+  "time" : {
+    "start" : 1622111813128,
+    "stop" : 1622111813128,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "241ebfc8beeb1437",
+  "name" : "test_login_oi05",
+  "time" : {
+    "start" : 1622111813121,
+    "stop" : 1622111813121,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f65dcd3d90cf628",
+  "name" : "test_login_os01[001]",
+  "time" : {
+    "start" : 1622111813111,
+    "stop" : 1622111813111,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b991415b67d332db",
+  "name" : "test_login_os02",
+  "time" : {
+    "start" : 1622111813107,
+    "stop" : 1622111813107,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ad9d83beb66d46",
+  "name" : "test_login_os01[003]",
+  "time" : {
+    "start" : 1622111813115,
+    "stop" : 1622111813115,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4f0cce2e13fc466",
+  "name" : "test_login_os01[002]",
+  "time" : {
+    "start" : 1622111813113,
+    "stop" : 1622111813113,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5809f965928420b",
+  "name" : "test_login_oi07",
+  "time" : {
+    "start" : 1622111813126,
+    "stop" : 1622111813126,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

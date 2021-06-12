@@ -1,0 +1,176 @@
+入门级别：
+1.为什么要用pytest？有什么好处？
+        1.非常容易上手，入门简单，文档丰富，文档中有很多实例可以参考
+        2.能够支持简单的单元测试和复杂的功能测试
+        3.支持参数化
+        4.执行测试过程中可以将某些测试跳过（skip），或者对某些预期失败的case标记成失败
+        5.支持重复执行(rerun)失败的 case
+        6.支持运行由 nose, unittest 编写的测试 case
+        7.可生成 html 报告
+        8.方便的和持续集成工具 jenkins 集成
+        9.可支持执行部分用例
+        10.具有很多第三方插件，并且可以自定义扩展
+
+2.批量导包
+        pytest-html
+        pytest-xdist
+        pytest-ordering
+        pytest-rerunfailures
+        allure-pytest
+
+        命令：
+        pip install -r requirements.txt
+
+3.测试用例的规则和命名
+        1.模块名必须以test_开头或者_test结尾
+        2.测试类必须以Test开头，并且不能用init方法
+        3.测试放大必须以test开头
+
+3.pytest测试用例运行方式
+        1.主函数模式
+            1.运行所有用例：pytest.main()
+            2.运行指定模块的测试用例：pytest.main(['-sv', 'test_login.py'])
+            3.运行指定文件夹的测试用例：pytest.main(['-sv', '/Users/dingzhihui/PycharmProjects/test_python_pytest/interFace'])
+            4.通过nodeid指定测试用例运行：nodeid是由模块名，分隔符，类名，方法名，函数名组成
+                pytest.main(['-sv', '../interFace/interface_test.py::test_o1_func'])
+        2.命令行模式
+            1.运行所有用例：pytest
+            2.执行模块的测试用例：pytest -vs test_login.py
+            3.运行指定文件夹的测试用例：pytest /interFace
+
+        参数详解：
+            1.-s  输出print的内容
+            2.-v  显示更详细的内容
+            3.-vs 叠加使用
+            4.-n  支持多线程或者分布式运行测试用例
+                pytest -vs -n 2(注意：2个线程)
+                pytest -vs /testCase -n 2(注意：2个线程)
+                pytest.main(['-sv', '../interFace/'，'-n=2'])
+            5.--reruns num 失败测试用例重跑
+                pytest.main(['-sv', '../interFace/'，'--reruns=2'] -----失败重新执行2次
+            6.-x  只要有一个用例失败 程序就停止执行
+            7.-maxfail=2  用例执行失败数量超过2，就停止运行
+            8.-k  根据测试用例的部分字符串指定测试用例。
+                 pytest -vs ./testCase -k "os"                #执行包含"os"字段的测试用例
+                 pytest -s -k "not http" start.py             #根据用例名称排除某些用例
+                 pytest -s -k "method or weibo" start.py      #同时匹配不同的用例名称
+
+--------3.通过读取pytest.ini配置文件运行------------------！--重要----!------------------------------------------------------
+            pytest.ini是pytest单元测试框架的核心配置文件
+            1.位置：一般是放在项目的根目录
+            2.编码：必须是ANSI，可以使用notpad++修改编码格式
+            3.作用：改变pytest默认的行为
+            4.运行规则：不管是主函数的模式下运行，还是命令行的模式运行，都会优先调用pytest.ini的配置文件
+                [pytest]
+                addopts = -vs
+                testpaths = ../testCase
+                python_files = test_*.py
+                python_classes = Test*
+                python_functions = test
+
+5.pytest测试用例是按照什么顺序执行的
+        unittest 是按照ascII的顺序来执行的
+        pytest默认是从上至下来执行的
+        注意：
+        @pytest.mark.run(order=1) 优先执行用例(改变默认的执行顺序)
+
+6.如何分组执行用例（冒烟 分模块 分接口和web执行）
+        smoke： 冒烟用例，分布在各个模块的情况下
+            markers =
+                smoke:冒烟用例
+                usermanage：用户管理
+                gie1：测试用例
+        命令执行
+        pytest -vs -m "smoke"
+        pytest -vs -m "smoke or usermanage"（这两个都执行）
+        pytest -m "not smoke and not usermanage"(这两个都不执行)
+
+7.pytest跳过测试用例
+        1.无条件跳过
+            @pytest.mark.skip(reason="跳过原因")
+        2.有条件跳过
+            @pytest.mark.skipif(age>=10,reason="跳过原因")
+
+进阶级别：
+    pytest框架实现一些前后置(固件，夹具)的处理，常用有三种
+8.
+setup           #在每个测试用例执行测试用例之前初始化的代码：打开浏览器，加载网页(一般是web测试)
+teardown        #在每个测试用例之前执行之扫尾的代码：关闭浏览器(一般是web测试)
+setup_class     #在每个类执行之前的初始化工作：创建日志对象，创建数据量的连接，创建接口请求对象
+teardown_class  #在每个类执行之前的初始化工作：创建日志对象，创建数据量的连接，创建接口请求对象
+
+9.使用@pytest.fixture()装饰器来实现【部分】用例的前后置
+    @pytest.fixture(scope="",params="",autouse="",ids="",name="")
+        1.scope标识被@pytest.fixture标记的方法的作用域，function(默认)，class,module,package/session
+        2.params：参数化(支持列表[]，元组()，字典列表[{},{},{}],字典元组[(),(),()])
+        3.autouse=Ture：自动执行，默认是False
+        4.ids：当使用params参数化时，给每一个值设置一个变量名，意义不大。
+        5.name：给表示的是被@pytest.fixture标记的方法取一个别名
+            注意：yield  和  return  不可以一起使用 ！！！！！！！！！！！
+
+10.通过conftest.py和@pytest.fixture()结合使用实现全局的前置应用(比如：项目的全局登录，模块的全局处理)
+    1.conftest.py文件是单独存放的一个夹具配置文件，名称是不能更改的(专门放置pytest.fixture()的方法)
+    2.用处：可以在不同的py文件中使用同一个finture函数
+    3.原则上conftest.py需要和运行的用例放到一层，并且不需要任何的import导入模块。
+
+常用三种前后置的总结：
+    setup/deardown，setup_class/dearwon_class, 它是作用于所有用例或者所有的类
+    @pytest.fixture() 它的作用是既可以部分也可以全部前后置
+    conftest.py和@pytest.fixture()结合使用，作用于全局的前后置
+
+11.断言
+    assert
+
+12.生成allure报告
+    1.下载allure，地址：https://github.com/allure-framework/allure2/releases，配置环境变量
+        或者直接 brew install allure 安装即可
+        验证是否安装成功：1.allure --version
+    注意：如iterm中可以验证，Pycharm中验证失败，重启Pycharm
+    2.生成json格式的临时报告，在pytest.ini中添加   --alluredir ./temp
+    3.在main函数中：
+            os.system('allure generate ./temp -o ./report --clear')
+            allure generate  固定命令预发
+            ./temp      找到json临时报告
+            -o          输出(output)
+            ./report    生成allure报告的路径
+            --clear     清空./report下原有的数据
+
+
+
+
+
+yaml详解(是一种数据格式)
+    主要作用：
+        1.配置文件
+        2.测试用例
+    数据组成部分：
+        1.map对象：键(空格) 值  name：丁智慧
+        2.list(列表)：用横线开头，
+            get_yaml_token:(文件下用例格式)
+            -
+                name：接口的名称
+                request：接口的请求
+                    method： get
+                    url： ：http
+                    data：
+                validata：(断言数据)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
